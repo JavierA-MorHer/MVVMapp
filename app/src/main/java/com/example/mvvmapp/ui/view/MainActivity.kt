@@ -7,7 +7,10 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.example.mvvmapp.databinding.ActivityMainBinding
 import com.example.mvvmapp.ui.viewModel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+//Con AndroidEntryPoint preparamos la clase para que pueda ser inyectada
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
